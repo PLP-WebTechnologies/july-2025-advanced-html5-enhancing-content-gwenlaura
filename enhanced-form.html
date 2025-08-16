@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Laura's shopping list and form demo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form</title>
+</head>
+<body>
+  <header>
+    <h1>Laura's List</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Shopping Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price (Ksh)</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Tissue Paper</td><td>40</td><td>10 pieces</td></tr>
+          <tr><td>Chia Seeds</td><td>200</td><td>400g</td></tr>
+          <tr><td>Yoghurt</td><td>130</td><td>1 pkt</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Favorite Fruits</h2>
+      <ul>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Pineapple</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Upload Your Receipt</h2>
+      <img src="Laura's Receipts.jpg" alt="Sample receipt image" width="300">
+    </section>
+
+    <section>
+      <h2>Order Form</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required autocomplete="name"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email"><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100" required><br>
+
+        <label for="code">Promo Code:</label>
+        <input type="text" id="code" name="code" value="JESUSpaiditALL" readonly><br>
+
+        <label for="fruit">Choose a fruit:</label>
+        <select id="fruit" name="fruit" required>
+          <option value="">--Select--</option>
+          <option value="mango">Mango</option>
+          <option value="banana">Banana</option>
+        </select><br>
+
+        <input type="submit" value="Submit Order">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Laura. All rights reserved.</p>
+  </footer>
+</body>
+</html>
